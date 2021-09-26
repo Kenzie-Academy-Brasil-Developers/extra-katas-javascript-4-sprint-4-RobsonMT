@@ -12,7 +12,7 @@ const kata1 = () => {
    let arrCities = gotCitiesCSV.split(',');
    return arrCities;
 }
-console.log(kata1());
+// console.log(kata1());
 
 /*
  Escreva uma função que retorna um array das palavras na frase contida em 'bestThing'. Lembre-se de também
@@ -22,7 +22,7 @@ const kata2 = () => {
     let arrWords = bestThing.split(' ');
     return arrWords;
 }
-console.log(kata2());
+// console.log(kata2());
 
 /*
  Escreva uma função que retorna uma string separada por ponto-e-vírgulas em vez das vírgulas de 'gotCitiesCSV'.
@@ -32,7 +32,7 @@ const kata3 = () => {
     let output = gotCitiesCSV.split(',');
     return output.join('; ');
 }
-console.log(kata3());
+// console.log(kata3());
 
 /*
  Escreva uma função que retorne uma string CSV (separada por vírgulas) de 'lotrCitiesArray'. Lembre-se de também
@@ -42,7 +42,7 @@ const kata4 = () => {
     let output = lotrCitiesArray.join(', ')
     return output;
 }
-console.log(kata4());
+// console.log(kata4());
 
 /*
  Escreva uma função que retorna um array com as 5 primeiras cidades de 'lotrCitiesArray'. Lembre-se de também
@@ -55,7 +55,7 @@ const kata5 = () => {
     }
     return output;
 }
-console.log(kata5());
+// console.log(kata5());
 
 /*
  Escreva uma função que retorna um array com as 5 últimas cidades de 'lotrCitiesArray'. Lembre-se de também
@@ -69,7 +69,7 @@ const kata6 = () => {
     }
     return output;
 }
-console.log(kata6());
+// console.log(kata6());
  
 /*
  Escreva uma função que retorna um array contendo da 3ª a 5ª cidades de 'lotrCitiesArray'. Lembre-se de também 
@@ -85,7 +85,7 @@ const kata7 = () => {
     }
     return output;
 }
-console.log(kata7());
+// console.log(kata7());
 
 /*
  Escreva uma função que use 'splice' para remover 'Rohan' de 'lotrCitiesArray' e retorne o novo 'lotrCitiesArray'
@@ -96,7 +96,7 @@ const kata8 = () => {
     newArr.splice(2,1);
     return newArr;
 }
-console.log(kata8());
+// console.log(kata8());
     
 /*
  Escreva uma função que use 'splice' para remover todas as cidades depois de 'Dead Marshes' de 'lotrCitiesArray'
@@ -107,7 +107,7 @@ const kata9 = () => {
     newArr.splice(5,newArr.length);
     return newArr;
 }
-console.log(kata9());
+// console.log(kata9());
 
 /*
  Escreva uma função que use 'splice' para adicionar 'Rohan' de volta ao 'lotrCitiesArray' logo depois de 'Gondor'
@@ -118,7 +118,7 @@ const kata10 = () => {
     output.splice(2,0, 'Rohan');
     return output;
 }
-console.log(kata10());
+// console.log(kata10());
 
 /*
  Escreva uma função que use 'splice' para renomear 'Dead Marshes' para 'Deadest Marshes' em 'lotrCitiesArray' e
@@ -129,7 +129,7 @@ const kata11 = () => {
    output.splice(5,1,'Deadest Marshes');
    return output.join(' ,');
 }
-console.log(kata11());
+// console.log(kata11());
 
 /*
  Escreva uma função que usa 'slice' para retornar uma string com os primeiros 14 caracteres de 'bestThing'.
@@ -140,7 +140,7 @@ const kata12 = () => {
   let newArr = arr.slice(0,14);
   return newArr.join(',');
 }
-console.log(kata12());
+// console.log(kata12());
 /*
  OBS:
  Eu ia usar o .replace(/ /g, ""); para remover os espaços em branco e retornar somente os caracteres porém espaços em branco
@@ -156,7 +156,7 @@ const kata13 = () => {
   let newArr = arr.slice(arr.length -12);
   return newArr.join(',');
 }
-console.log(kata13());
+// console.log(kata13());
 
 /*
  Escreva uma função que usa 'slice' para retornar uma string com os caracteres entre as posições 23 e 38
@@ -167,7 +167,7 @@ const kata14 = () => {
   let newArr = arr.slice(23,38);
   return newArr.join(',');
 }
-console.log(kata14());
+// console.log(kata14());
 
 /*
  Escreva uma função que faz exatamente a mesma coisa que a #13 mas use o método 'substring' em vez de 'slice'.
@@ -179,7 +179,7 @@ const kata15 = () => {
   let output = newArr.split('').join(',');
   return output;
 }
-console.log(kata15());
+// console.log(kata15());
 
 /*
  Escreva uma função que faça exatamente a mesma coisa que o #14 mas use o método 'substring' em vez de 'slice'.
@@ -191,7 +191,7 @@ const kata16 = () => {
   let output = newArr.split('').join(',');
   return output;
 }
-console.log(kata16());
+// console.log(kata16());
 
 /*
  Escreva uma função que use 'pop' para remover a última cidade de 'lotrCitiesArray e retorne o novo array.
@@ -207,7 +207,7 @@ const kata17 = () => {
    });
    return arr;
 }
-console.log(kata17());
+// console.log(kata17());
 
 /*
  Escreva uma função que usa 'push' para adicionar de volta, no final do array, a cidade de 'lotrCitiesArray'
@@ -227,7 +227,7 @@ const kata18 = () => {
   arr.push(itemRemoved)
   return arr;
 }
-console.log(kata18());
+// console.log(kata18());
 
 /*
  Escreva uma função que usa 'shift' para remover a primeira cidade de 'lotrCitiesArray e retorne o novo array.
@@ -238,7 +238,7 @@ const kata19 = () => {
   arr.shift();
   return arr;
 }
-console.log(kata19());
+// console.log(kata19());
 
 /*
  Escreva uma função que use 'unshift' para adicionar de volta, no começo do array, a cidade de 'lotrCitiesArray'
@@ -252,7 +252,7 @@ const kata20 = () => {
   arr.unshift(itemRemoved)
   return arr;
 }
-console.log(kata20());
+// console.log(kata20());
 
 /*
  KATAS_BÔNUS
@@ -272,7 +272,7 @@ const kata_Bonus1 = () => {
   });
   return index;
 }
-console.log(kata_Bonus1());
+// console.log(kata_Bonus1());
 
 /*
  Escreva uma função que encontre e **retorne** o índice da última palavra do array 'bestThing'. Lembre-se de
@@ -289,7 +289,7 @@ const kata_Bonus2 = () => {
   });
   return index;
 }
-console.log(kata_Bonus2());
+// console.log(kata_Bonus2());
 
 /*
  Escreva uma função que encontre e **retorne** um array de todas as cidades do array 'gotCitiesCSV' que tiverem
@@ -310,7 +310,7 @@ const kata_Bonus3 = () => {
   });
   return arrlist;
 }
-console.log(kata_Bonus3());
+// console.log(kata_Bonus3());
 
 /*
  Escreva uma função que encontre e **retorne** um array com todas as cidades do array 'lotrCitiesArray' que 
@@ -329,7 +329,7 @@ const kata_Bonus4 = () => {
   });
   return arrList;
 }
-console.log(kata_Bonus4());
+// console.log(kata_Bonus4());
 
 /*
  Escreva uma função que encontre e **retorne** um array com todas as palavras de 'bestThing' que começa com 'b'.
@@ -340,7 +340,7 @@ const kata_Bonus5 = () => {
   let arrList = arr.filter(element => element[0] === 'b')
   return arrList;
 }
-console.log(kata_Bonus5());
+// console.log(kata_Bonus5());
 
 /*
  Escreva uma função que **retorne** 'true' ou 'false' se o array 'lotrCitiesArray' incluir 'Mirkwood'. Lembre-se
@@ -358,7 +358,7 @@ const kata_Bonus6 = () => {
   });
   return output;
 }
-console.log(kata_Bonus6());
+// console.log(kata_Bonus6());
 
 /*
  Escreva uma função que **retorne** 'true' ou 'false' se o array 'lotrCitiesArray' incluir 'Hollywood'. Lembre-se de
@@ -374,7 +374,7 @@ const kata_Bonus7 = () => {
   });
   return output;
 }
-console.log(kata_Bonus7());
+// console.log(kata_Bonus7());
 
 /*
  Escreva uma função que **retorne** o índice da palavra 'Mirkwood' no array 'lotrCitiesArray'. Lembre-se de também
@@ -390,7 +390,7 @@ const kata_Bonus8 = () => {
   });
   return index;
 }
-console.log(kata_Bonus8());
+// console.log(kata_Bonus8());
 
 /*
  Escreva uma função que encontre e **retorne** a primeira cidade do array 'lotrCitiesArray' que tiver mais de uma palavra.
@@ -400,7 +400,7 @@ const kata_Bonus9 = () => {
   let output = lotrCitiesArray.filter(cit => cit.includes(' '));
   return output;
 }
-console.log(kata_Bonus9());
+// console.log(kata_Bonus9());
 
 /*
  Escreva uma função que inverta a ordem do array 'lotrCitiesArray' e **retorne** o novo array. Lembre-se de também 
@@ -410,7 +410,7 @@ const kata_Bonus10 = () => {
   let arr = lotrCitiesArray.slice().reverse();
   return arr;
 }
-console.log(kata_Bonus10());
+// console.log(kata_Bonus10());
 
 /*
  Escreva uma função que ordene o array 'lotrCitiesArray' alfabeticamente e **retorne** o novo array. Lembre-se de também
@@ -420,7 +420,7 @@ const kata_Bonus11 = () => {
   let arr = lotrCitiesArray.slice().sort();
   return arr;
 }
-console.log(kata_Bonus11());
+// console.log(kata_Bonus11());
 
 /*
  Escreva uma função que ordene o array 'lotrCitiesArray' pelo número de caracteres em cada cidade (por exemplo,
@@ -439,7 +439,7 @@ const kata_Bonus12 = () => {
   });
   return output;
 }
-console.log(kata_Bonus12());
+// console.log(kata_Bonus12());
 
 /*
  Show_Results
@@ -456,13 +456,13 @@ kata_Bonus9(),kata_Bonus10(),kata_Bonus11(),kata_Bonus12()]
  //index_references
 const $box = document.querySelector('#box_Wrapper');
 const $btn = document.querySelector('#btn');
+const katas_List = document.createElement('ul');
 
  //show_create_function
 const show_result = (result) =>{
-  const katas_List = document.createElement('ul');
   const list = document.createElement('li');
   const list_item = document.createElement('h3');
-  list_item.innerText = (result);
+  list_item.innerText = JSON.stringify(result);
   list.appendChild(list_item);
   katas_List.appendChild(list);
   $box.appendChild(katas_List);
@@ -473,26 +473,24 @@ const show_result = (result) =>{
 const $btn_listener = () =>{
   $btn.addEventListener('click', ()=>{
     katas_array.forEach((out,num)=> {
-      show_result(`KATA${num+1} ${out}`)
+      show_result(`KATA${num+1}= ${out}`)
     });
-    bonus_array.forEach((elt,i)=> {
-      show_result(`KATA BONUS${i+1} ${elt}`)
+    bonus_array.forEach((el,i)=> {
+      show_result(`KATA BONUS${i+1}= ${el}`)
     });
   });
   return $btn;
 }
 $btn_listener();
 
-// var anyString = "Mozillaxxxx";
-// // Mostra "Moz"]
-// console.log(anyString.substring(0,3));
-// console.log(anyString.substring(3));
-// console.log(anyString.substring(anyString.length,3));
-// console.log(anyString.substring(3,anyString.length));
-// console.log(anyString.substring(anyString.length -4));
-// let a = [1,2,3,4];
-// let b = JSON.parse(JSON.stringify(a));
-// b.pop()
-// console.log(a)
-// console.log(b)
+//clear btn-function
+const $clear_btn = document.querySelector('#clear')
+const $clear =()=>{
+ $clear_btn.addEventListener('click', ()=>{
+  $box.innerText = '';
+ });
+ return $clear;
+}
+$clear();
+
 
