@@ -444,36 +444,44 @@ console.log(kata_Bonus12());
 /*
  Show_Results
 */
-const katas_array = ['kata1','kata2','kata3','kata4','kata5','kata6','kata7','kata8','kata9','kata10','kata11','kata12','kata13',
-'kata14','kata15','kata16','kata17','kata18','kata19','kata20','kata_Bonus1','kata_Bonus2','kata_Bonus3','kata_Bonus4','kata_Bonus5',
-'kata_Bonus6','kata_Bonus7','kata_Bonus8','kata_Bonus9','kata_Bonus10','kata_Bonus11','kata_Bonus12'];
 
+ //katas_array
+const katas_array = [kata1(), kata2(),kata3(),kata4(),kata5(),kata6(),kata7(),kata8(),kata9(),kata10(),kata11(),kata12(),kata13(),
+kata14(),kata15(),kata16(),kata17(),kata18(),kata19(),kata20()];
+
+ //bonus_array
+const bonus_array = [kata_Bonus1(),kata_Bonus2(),kata_Bonus3(),kata_Bonus4(),kata_Bonus5(),kata_Bonus6(),kata_Bonus7(),kata_Bonus8(),
+kata_Bonus9(),kata_Bonus10(),kata_Bonus11(),kata_Bonus12()]
+
+ //index_references
+const $box = document.querySelector('#box_Wrapper');
 const $btn = document.querySelector('#btn');
+
+ //show_create_function
+const show_result = (result) =>{
+  const katas_List = document.createElement('ul');
+  const list = document.createElement('li');
+  const list_item = document.createElement('h3');
+  list_item.innerText = (result);
+  list.appendChild(list_item);
+  katas_List.appendChild(list);
+  $box.appendChild(katas_List);
+  return result;
+}
+
+ //btn_listener
 const $btn_listener = () =>{
   $btn.addEventListener('click', ()=>{
-    show_result();
+    katas_array.forEach((out,num)=> {
+      show_result(`KATA${num+1} ${out}`)
+    });
+    bonus_array.forEach((elt,i)=> {
+      show_result(`KATA BONUS${i+1} ${elt}`)
+    });
   });
   return $btn;
 }
 $btn_listener();
-
-const $box = document.querySelector('#box_Wrapper');
-const katas_List = document.createElement('ul');
-const list = document.createElement('li');
-const list_item = document.createElement('h3');
-
-const show_result = () =>{
-  let arr = katas_array.slice();
-  let show = arr.forEach((element,i) => {
-    let kata = katas_array[i];
-    list_item.innerText = kata;
-    list.appendChild(list_item);
-    katas_List.appendChild(list);
-    $box.appendChild(katas_List);
-  });
-  return show;
-}
-// show_result()
 
 // var anyString = "Mozillaxxxx";
 // // Mostra "Moz"]
