@@ -487,7 +487,7 @@ $btn_listener();
 const $clear_btn = document.querySelector('#clear')
 const $clear =()=>{
  $clear_btn.addEventListener('click', ()=>{
-  $box.innerText = '';
+    $box.innerText = '';
  });
  return $clear;
 }

@@ -9,13 +9,14 @@ body{
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(90deg,#ADD8E6,#87CEFA);
 }
 header{
     width: 100%;
     text-align: center;
 }
 header>h1{
-    text-shadow: rgb(167, 166, 166) 3px 2px 1px;
+    text-shadow: rgb(172, 166, 166) 3px 2px 1px;
 }
 main{
     flex: 1;
