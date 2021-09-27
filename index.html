@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS - Katas 04</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <header>
         <h1>JS - Katas 04</h1>
     </header>
     <main>
-        <label for="btn">
-            <input type="button" value="show results" id="btn">
-        </label>
+        <div class="btn_area">
+            <label for="btn">
+                <input type="button" value="show results" id="btn" class="btn">
+            </label>
+            <span><button id="clear" class="btn">clear</button></span>
+        </div>
         <div id="box_Wrapper"></div>
     </main>
-    <script src="./katas4.js"></script>
+    <script src="./assets/js/katas4.js"></script>
 </body>
 </html>
