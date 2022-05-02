@@ -1,0 +1,71 @@
+html,body,header,main,div,ul,li{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, Ubuntu;
+}
+body{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg,#ADD8E6,#87CEFA);
+}
+header{
+    width: 100%;
+    text-align: center;
+}
+header>h1{
+    text-shadow: rgb(172, 166, 166) 3px 2px 1px;
+}
+main{
+    flex: 1;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.btn_area{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#btn,#clear{
+    padding: 5px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 14px;
+    transition: 300ms linear;
+    color: rgb(138, 132, 132);
+    margin: 0 5px;
+}
+.btn:hover{
+    background-color: rgba(211, 208, 208, 0.815);
+    cursor: pointer;
+}
+.btn:active{
+    background-color: rgba(97, 93, 93, 0.904);
+    transition: 3ms;
+}
+ul{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0 20px;
+    list-style-type: none;
+}
+li{
+    background-color: #F5F5F5;
+    margin:10px 0;
+    padding: 0 10px 15px 10px;
+    border-top:10px solid #F5F5F5;
+    border-left:20px solid transparent;
+    background-clip: padding-box;
+    border-radius: 6px;
+} 
+h3::before{
+    content: " \27A5  ";
+    background-color: rgba(127, 168, 122, 0.521);
+    border-radius: 50%;
+}
